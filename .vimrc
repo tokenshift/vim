@@ -12,7 +12,7 @@ filetype plugin indent on
 syntax on
 
 set background=dark
-set nobackup nowritebackup
+set autoread nobackup nowritebackup
 set guifont=Lucida_Console:h12:cANSI
 set number ruler cc=80
 colorscheme molokai
