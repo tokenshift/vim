@@ -4,6 +4,9 @@ call pathogen#infect()
 " NERDTree alias
 map <F2> :NERDTreeToggle<CR>
 
+" Lorem Ipsum text
+command -nargs=* Lipsum Loremipsum <args>
+
 " Go language support.
 filetype off
 filetype plugin indent off
