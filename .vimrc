@@ -13,17 +13,19 @@ filetype plugin indent off
 set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
+set hidden
 
 set background=dark
-set autoread nobackup nowritebackup
+set autoread nobackup nowritebackup noswapfile
 set guifont=Lucida_Console:h12:cANSI
 set number ruler cc=80
+set nowrap
 colorscheme molokai
 set encoding=utf-8
-set nocompatible
 syntax on
-set backspace=2
-source $VIMRUNTIME/mswin.vim
+set backspace=indent,eol,start
+set showmatch hlsearch incsearch
+set ignorecase smartcase
 behave mswin
 
 filetype plugin on
@@ -33,7 +35,9 @@ set autoread
 
 set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab smarttab
 
-set autoindent smartindent wrap
+set autoindent copyindent
+
+set mouse=a
 
 " Smart Home-Button Behavior from http://vim.wikia.com/wiki/Smart_home
 function! SmartHome()
@@ -50,5 +54,9 @@ endfunction
 noremap <expr> <silent> <Home> SmartHome()
 imap <silent> <Home> <C-O><Home>
 
-" SnipMate Windows support
-source ~/.vim/bundle/snipMate/after/plugin/snipMate.vim
+if has('win32')
+	" SnipMate Windows support
+	source ~/.vim/bundle/snipMate/after/plugin/snipMate.vim
+
+	source $VIMRUNTIME/mswin.vim
+endif
