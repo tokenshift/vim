@@ -54,6 +54,9 @@ endfunction
 noremap <expr> <silent> <Home> SmartHome()
 imap <silent> <Home> <C-O><Home>
 
+" Conque shell
+command Sh ConqueTerm sh
+
 if has('win32')
 	" SnipMate Windows support
 	source ~/.vim/bundle/snipMate/after/plugin/snipMate.vim
