@@ -55,7 +55,8 @@ noremap <expr> <silent> <Home> SmartHome()
 imap <silent> <Home> <C-O><Home>
 
 " Conque shell
-command Sh ConqueTerm sh
+command Bash ConqueTerm bash
+let g:ConqueTerm_Color = 2
 
 if has('win32')
 	" SnipMate Windows support
