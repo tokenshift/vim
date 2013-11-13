@@ -20,7 +20,7 @@ set autoread nobackup nowritebackup noswapfile
 set guifont=Lucida_Console:h12:cANSI
 set number ruler cc=80
 set nowrap
-colorscheme molokai
+colorscheme codeburn
 set encoding=utf-8
 syntax on
 set backspace=indent,eol,start
