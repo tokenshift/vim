@@ -1,1 +1,1 @@
-set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab smarttab
+set tabstop=8 shiftwidth=8 softtabstop=8 expandtab smarttab
