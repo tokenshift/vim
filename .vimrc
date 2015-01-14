@@ -37,6 +37,9 @@ set tabstop=4 shiftwidth=4 softtabstop=4 noexpandtab smarttab
 
 set autoindent copyindent
 
+set listchars=tab:--,trail:#,nbsp:+
+set list
+
 set mouse=a
 
 " Smart Home-Button Behavior from http://vim.wikia.com/wiki/Smart_home
