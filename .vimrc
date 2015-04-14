@@ -28,6 +28,7 @@ set showmatch hlsearch incsearch
 set ignorecase smartcase
 behave mswin
 
+
 filetype plugin on
 filetype indent on
 
@@ -83,6 +84,9 @@ function SwitchTabStyle()
   endif
 endfunction
 map <F9> :call SwitchTabStyle()<CR>
+
+" Spell check
+map <F7> :setlocal spell spelllang=en_us<CR>
 
 " Windows-specific functionality
 if has('win32')
