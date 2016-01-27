@@ -17,7 +17,7 @@ set hidden
 
 set background=dark
 set autoread nobackup nowritebackup noswapfile
-set guifont=Lucida_Console:h13:cANSI
+set guifont=Lucida_Console:h14:cANSI
 set number ruler cc=80
 set nowrap
 colorscheme molokai
